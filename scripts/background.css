@@ -1,0 +1,36 @@
+.reduxlogo {
+
+    opacity: 50;
+}
+
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+
+
+}
+.bodycolors {
+
+    background: linear-gradient(271deg, #9575cd, #7e57c2, #673ab7, #5e35b1);
+    background-size: 800% 800%;
+
+    -webkit-animation: osolobkgnd 59s ease infinite;
+    animation: osolobkgnd 59s ease infinite;
+}
+
+@-webkit-keyframes osolobkgnd {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes osolobkgnd {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
