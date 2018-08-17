@@ -1,34 +1,69 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:align-self="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>REDUX software</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.css.map">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css.map">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="scripts/background.css">
-    <style>
-
-    </style>
-
+    <title> REDUX - homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-<div class="bodycolors" style="height: 100%">
-<div style="display: block; margin: 0 auto" >
-    <img src="img/logo_svg.svg" style="height: 40% ; width: 40% ;display: block; margin: 0 auto">
-    <div class="buttons" align="center">
-        <a class="button is-primary is-inverted is-outlined" style="background: transparent ; " href="https://reduxsoftware.net/projects.html">projects</a>
-        <a class="button is-primary is-inverted is-outlined" style="background: transparent ; "href="#">blog</a>
-        <a class="button is-primary is-inverted is-outlined" style="background: transparent ; "href="https://reduxsoftware.net/about.html">about us</a>
-        <a href="https://join.slack.com/t/reduxsoftware/shared_invite/enQtMjU3MzMwNjI1MjMyLTUwYTBkMmVmYjI2NmE4OTQzYjA0ZDljMTc4Yzc5OTJiZTkxYmJhZmI4YjViMGJlYTg4NDIxZDEwNDM1YmU1YmY" target="_blank" class="button is-primary is-inverted is-outlined" style="background: transparent ; " >slack</a>
+   
+        <style>
+                body {
+                     background-color: #d50000;
+                     align-items: center;
+                     overflow-x: hidden;
+                }
+                h2 {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 2vw;
+                }
+                h4 {
+                    font-family: 'Montserrat', sans-serif;
+                }
+                
+                a {
+                    color: #212121;
+                }
+                a:hover {
+                    color: #FAFAFA;
+                }
+                
+               
+            </style>
+    <div class="contrainer-fluid">
+        <div class="row">
+            <div class="col">
+                    <img src="reduxlogo_svg.svg" width="35%" height="35%" style="position: fixed; top: 50%; left: 25%; transform: translate(-50%,-60%);"></img>
+            </div>
+            <div class="col" >
+                    <h2 style="position: fixed; top: 48%; left: 55%; transform: translate(-50%,-95%);"><span id="subText">software</span></h2>
+                    <br>
+                    <div style="position: fixed; top: 50%; left: 75%; transform: translate(-50%,-75%);">
+                    <h4><a href="about.html"><u>about us</u></a> </h4>
+                    <h4><a href="projects.html"><u>projects</u></a> </h4>
+                    <h4><a href="https://medium.com/redux-blog/" target="_blank"><u>blog</u></a></h4>
+                    </div>
+            </div>
+        </div>
     </div>
 
-</div>
-</div>
+    <script>
+            var text = ["ui design", "tools", "ux consulting", "software"];
+            var counter = 0;
+            var elem = document.getElementById("subText");
+            var inst = setInterval(change, 1500);
+        
+        function change() {
+          elem.innerHTML = text[counter];
+          counter++;
+          if (counter >= text.length) {
+            counter = 0;
+            // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+          }
+        }
+            </script>
+    
 </body>
 </html>
