@@ -1,104 +1,60 @@
 <html>
-<head>
-    <title> REDUX - about</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-</head>
-<body>
-   
-        <style>
-                body {
-                     background-color: #d50000;
-                     align-items: center;
-                     overflow-x: hidden;
-                }
-                h2 {
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 2vw;
-                    color: #212121;
-                }
-                .nav-link {
-                    font-family: 'Montserrat', sans-serif;
-                }
-                h1 {
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 5vw;
-                }
-                
-                a {
-                    color: #212121;
-                }
-                a:hover {
-                    color: #FAFAFA;
-                
-                }
-                h3 {
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 2vw;
-                    color: #212121;
-                }
-                #aboutPageTxt{
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 1vw;
-                    color: #212121;
-                }
-                
-                
-               
-            </style>
-            <nav class="navbar navbar-dark" style="background-color: #212121;">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="reduxlogo_svg.embed.svg" height="10%" width="10%">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                              </button>
-                              <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">about us</a>
-                                  </li>
-                                  <li class="nav-item active">
-                                    <a class="nav-link" href="projects.html">projects </a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="https://medium.com/redux-blog">blog</a>
-                                  </li>
-                                  
-                                </ul>
-                              </div>
-                  </nav>
-                  <div class="contrainer-fluid">
-                        <div class="row">
-                            <div class="col">
-                                    <h1 style="position: fixed; top: 50%; left: 25%; transform: translate(-50%,-50%);">about us</h1>
-                            </div>
-                            <div class="col">
-                                <!padding is for losers lol /s >
-                                <br>
-                                <h3>REDUX copyright 2018</h3>
-                                <br>
-                                <br>
-                                <h3>about us</h3>
-                                <hr>
-                                <span id="aboutPageTxt">
-                                    The goal of REDUX was to make software and tools that everyone can use, in UI/UX wise and pracicality wise.
-                                    It may be in a form of a piece of software, or even a game, the possibilities are endless for us.
-                                </span>
-                                <br>
-                                <br>
-                                <h3>contact</h3>
-                                <hr>
-                                <span id="aboutPageTxt">
-                                    If you would like to ask questions, or have a request of some sort, feel free to email us.
-                                    <br>
-                                    <a href="mailto:vguy.lazarev@gmail.com?Subject=Questions%20or%20Requests">click here to email.</a>
-                                </span>
-                            </div>
-                        </div>
+
+    <head>
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+    </head>
+
+    <body style="background-color: #F5F5F5;">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a href="https://reduxsoftware.net" class="uk-navbar-item uk-logo">REDUX</a>
+                        <ul class="uk-navbar-nav">
+                            
+                            <li class="uk-active"><a href="#">about</a></li>
+                            <li><a href="https://reduxsoftware.net/projects.html">projects</a></li>
+                            <li><a href="https://medium.com/redux-blog/" target="_blank">blog</a>
+                            </li>
+                        </ul>
                     </div>
-                </body>
-            </html>
+                </nav>
+            
+        <div class="uk-flex-center uk-flex uk-flex-middle uk-grid-divider"  style="  margin: 0;
+        height: 90%;" uk-align-center uk-grid>
+            <div>
+               <h1 class="uk-heading-medium">about us.</h1>
+            </div>
+            <div>
+                <div class="uk-card uk-card-secondary uk-card-body">
+                  
+                    REDUX was founded based on making stuff that makes sense, both functionly and visualy. <br>It may be in a form of a piece of software, hardware, or even a game. The possibilities are endless.<br><br>contact us over <a href="mailto:vguy.lazarev@gmail.com">email</a>.
+                </div>
+            </div>
+        </div>
+
+
+        <style>
+            .footer {
+              position: fixed;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              
+              
+              color: #212121;
+              text-align: center;
+            }
+            </style>
+            
+            <div class="footer">
+              <p>&copy;2020 REDUX</p>
+            </div>
+
+
+    </body>
+
+
+</html>
